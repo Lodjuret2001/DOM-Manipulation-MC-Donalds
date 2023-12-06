@@ -27,9 +27,146 @@ img {
 /*-----NAVBAR CSS-------*/
 
 .navbarBackground {
-    background-color: rgb(248, 0, 0);
     height: 135px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+    
 }
+
+.navbarContainer {
+    display: flex;
+    align-items: center;
+    width: 1170px;
+}
+
+.navbarContainerLeft {
+    width: 110px;
+    height: 110px;
+}
+
+.navbarContainerLeft img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbarContainerRight {
+    flex: 1;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*-----Navbar top links-------*/
+
+.navbarTopContainer {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topContainerBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.topContainerBoxLeft {
+    width: 315px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.languageContainer {
+    display: flex;
+    align-items: center;
+}
+
+.languageContainer img {
+    width: 12px;
+    height: 12px;
+    padding-top: 3px;
+    margin-left: 5px;
+}
+
+.topContainerBoxRight {
+    width: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.searchImgContainer {
+    display: flex;
+    align-items: center;
+}
+
+.searchImgContainer img {
+    width: 17px;
+    height: 17px;
+    margin-right: 4px;
+}
+
+.changeLocationContainer {
+    display: flex;
+    align-items: center;
+}
+
+.changeLocationContainer img {
+    width: 17px;
+    height: 17px;
+    margin-right: 4px;
+}
+
+.changeLocationContainer a {
+    color: rgb(56, 56, 155);
+    text-decoration: underline;
+}
+
+.btnOrderNow {
+    padding: 12px 24px;
+    background-color: #ffbc0d;
+    border: none;
+    border-radius: 4px;
+}
+
+/*------Navbar bottom links------*/
+
+.navbarBottomContainer {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bottomContainerBox {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.ourMenuContainer {
+    display: flex;
+    align-items: center;
+}
+
+.ourMenuContainer img {
+    width: 14px;
+    height: 14px;
+    margin-left: 4px;
+}
+
+
 
 /*------PAGEGRID CSS------*/
 .pageGrid {
