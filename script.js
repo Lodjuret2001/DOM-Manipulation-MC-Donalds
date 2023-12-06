@@ -29,8 +29,31 @@
 // parent.appendChild(btnName);
 
 //Snippet = "bcd"
-//----------------Start ------------------------//
+//----------------Start ------------------------//<== start new document.body with comment!
 
 
-//-------------------Start divName---------------------// <== start new document.body with comment!
+//-------------------Start Navbar---------------------// 
+const navbarBackground = document.createElement('div');
+navbarBackground.classList = 'navbarBackground';
+document.body.appendChild(navbarBackground);
 
+
+
+
+//----------------Start pageGrid------------------------//
+
+const pageGrid = document.createElement('div');
+pageGrid.classList = 'pageGrid';
+document.body.appendChild(pageGrid);
+
+const pageGridLeft = document.createElement('div');
+pageGridLeft.classList = 'pageGridLeft';
+pageGrid.appendChild(pageGridLeft);
+
+const pageGridMid = document.createElement('div');
+pageGridMid.classList = 'pageGridMid';
+pageGrid.appendChild(pageGridMid);
+
+const pageGridRight = document.createElement('div');
+pageGridRight.classList = 'pageGridRight';
+pageGrid.appendChild(pageGridRight);
