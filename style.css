@@ -252,6 +252,7 @@ img {
 
 .linkGrid {
     margin-top: 160px;
+    margin-bottom: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 25px;
@@ -275,4 +276,80 @@ img {
     margin-bottom: 20px;
     margin-top: 0px;
 
+}
+
+/*------Start SocialMedia and App------*/
+
+.socialAppContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.socialMediaContainer {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.appContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.socialMediaContainer img {
+    width: 30px;
+    height: 30px;
+}
+
+.appContainer img {
+    width: auto;
+    height: 40px;
+}
+
+.socialAppContainer hr {
+    margin-bottom: 30px;
+}
+
+/*------Start policyCopyrightLinks------*/
+
+.policyCopyrightContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    height: 80px;
+}
+
+.policyLinksContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 650px;
+    background-color: violet;
+    height: 100%;
+
+}
+
+.copyrightContainer {
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.policyLinksContainer a {
+    margin-right: 30px;
+    padding-bottom: 30px;
+}
+
+.copyrightContainer img {
+    margin-right: 30px;
 }

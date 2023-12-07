@@ -485,7 +485,7 @@ linksContainer3.appendChild(communityLink8);
 //----------------Start linksContainer4 ------------------------//
 
 const contactUsH2 = document.createElement('h2');
-contactUsH2.textContent = 'Community';
+contactUsH2.textContent = 'Contact Us';
 linksContainer4.appendChild(contactUsH2);
 
 const contactUsLink = document.createElement('a');
@@ -519,4 +519,114 @@ contactUsLink6.textContent = 'Frequently Asked Questions';
 linksContainer4.appendChild(contactUsLink6);
 
 
-//----------------Start ------------------------//
+//----------------Start SocialMedia and App ------------------------//
+
+const socialAppContainer = document.createElement('div');
+socialAppContainer.classList = 'socialAppContainer';
+pageGridMid.appendChild(socialAppContainer);
+
+const socialMediaContainer = document.createElement('div');
+socialMediaContainer.classList = 'socialMediaContainer';
+socialAppContainer.appendChild(socialMediaContainer);
+
+const facebookImg = document.createElement('img');
+facebookImg.src = 'https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/facebook.png';
+facebookImg.alt = 'facebookImg';
+socialMediaContainer.appendChild(facebookImg);
+
+const xImg = document.createElement('img');
+xImg.src = 'https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/x.png';
+xImg.alt = 'xImg';
+socialMediaContainer.appendChild(xImg);
+
+const youtubeImg = document.createElement('img');
+youtubeImg.src = 'https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/youtube.png';
+youtubeImg.alt = 'youtubeImg';
+socialMediaContainer.appendChild(youtubeImg);
+
+const instgramImg = document.createElement('img');
+instgramImg.src = 'https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/instagram.png';
+instgramImg.alt = 'instgramImg';
+socialMediaContainer.appendChild(instgramImg);
+
+const tumblrImg = document.createElement('img');
+tumblrImg.src = 'https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/tumblr.png';
+tumblrImg.alt = 'tumblrImg';
+socialMediaContainer.appendChild(tumblrImg);
+
+const spotifyImg = document.createElement('img');
+spotifyImg.src = 'https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/spotify.png';
+spotifyImg.alt = 'spotifyImg';
+socialMediaContainer.appendChild(spotifyImg);
+
+const appContainer = document.createElement('div');
+appContainer.classList = 'appContainer';
+socialAppContainer.appendChild(appContainer);
+
+const appStoreImg = document.createElement('img');
+appStoreImg.src = 'https://www.mcdonalds.com/content/dam/sites/usa/nfl/logo/app_store_badge.png';
+appStoreImg.alt = 'appStoreImg';
+appContainer.appendChild(appStoreImg);
+
+const googleStoreImg = document.createElement('img');
+googleStoreImg.src = 'https://www.mcdonalds.com/content/dam/sites/usa/nfl/logo/google_play_badge.png';
+googleStoreImg.alt = 'googleStoreImg';
+appContainer.appendChild(googleStoreImg);
+
+const breakLine = document.createElement('hr');
+pageGridMid.appendChild(breakLine);
+
+//----------------Start policyCopyrightLinks------------------------//
+
+const policyCopyrightContainer = document.createElement('div');
+policyCopyrightContainer.classList = 'policyCopyrightContainer';
+pageGridMid.appendChild(policyCopyrightContainer);
+
+const policyLinksContainer = document.createElement('div');
+policyLinksContainer.classList = 'policyLinksContainer';
+policyCopyrightContainer.appendChild(policyLinksContainer);
+
+const privacyLink = document.createElement('a');
+privacyLink.href = 'https://www.mcdonalds.com/us/en-us/privacy-overview.html';
+privacyLink.textContent = 'Privacy (Updated)';
+policyLinksContainer.appendChild(privacyLink);
+
+const privacyLink2 = document.createElement('a');
+privacyLink2.href = 'https://www.mcdonalds.com/us/en-us/california-privacy-notice.html';
+privacyLink2.textContent = 'California Privacy Notice';
+policyLinksContainer.appendChild(privacyLink2);
+
+const termsLink = document.createElement('a');
+termsLink.href = 'https://www.mcdonalds.com/us/en-us/terms-and-conditions.html';
+termsLink.textContent = 'Terms & Conditions';
+policyLinksContainer.appendChild(termsLink);
+
+const accessibilityLink = document.createElement('a');
+accessibilityLink.href = 'https://www.mcdonalds.com/us/en-us/accessibility.html';
+accessibilityLink.textContent = 'Accessibility';
+policyLinksContainer.appendChild(accessibilityLink);
+
+const informationLink = document.createElement('a');
+informationLink.href = 'https://www.mcdonalds.com/us/en-us/privacy/do-not-sell-my-personal-information.html';
+informationLink.textContent = 'Do Not Sell or Share My Personal Information';
+policyLinksContainer.appendChild(informationLink);
+
+const cookieLink = document.createElement('a');
+cookieLink.href = 'https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-food-experts.html';
+cookieLink.textContent = 'Cookies Settings';
+policyLinksContainer.appendChild(cookieLink);
+
+
+const copyrightContainer = document.createElement('div');
+copyrightContainer.classList = 'copyrightContainer';
+policyCopyrightContainer.appendChild(copyrightContainer);
+
+const mcdonaldsLogoCopyright = document.createElement('img');
+mcdonaldsLogoCopyright.src = 'https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/arches-logo_108x108.jpg';
+mcdonaldsLogoCopyright.alt = 'mcdonaldsLogoCopyright';
+copyrightContainer.appendChild(mcdonaldsLogoCopyright);
+
+const copyrightText = document.createElement('p');
+copyrightText.textContent = '© 2017 - 2023 McDonalds. All Rights Reserved';
+copyrightContainer.appendChild(copyrightText); 
+
