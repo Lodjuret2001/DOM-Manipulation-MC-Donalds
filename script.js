@@ -586,36 +586,43 @@ const policyLinksContainer = document.createElement('div');
 policyLinksContainer.classList = 'policyLinksContainer';
 policyCopyrightContainer.appendChild(policyLinksContainer);
 
+const policyLinksContainer1 = document.createElement('div');
+policyLinksContainer1.classList = 'policyLinksContainer1';
+policyLinksContainer.appendChild(policyLinksContainer1);
+
+const policyLinksContainer2 = document.createElement('div');
+policyLinksContainer2.classList = 'policyLinksContainer2';
+policyLinksContainer.appendChild(policyLinksContainer2);
+
 const privacyLink = document.createElement('a');
 privacyLink.href = 'https://www.mcdonalds.com/us/en-us/privacy-overview.html';
 privacyLink.textContent = 'Privacy (Updated)';
-policyLinksContainer.appendChild(privacyLink);
+policyLinksContainer1.appendChild(privacyLink);
 
 const privacyLink2 = document.createElement('a');
 privacyLink2.href = 'https://www.mcdonalds.com/us/en-us/california-privacy-notice.html';
 privacyLink2.textContent = 'California Privacy Notice';
-policyLinksContainer.appendChild(privacyLink2);
+policyLinksContainer1.appendChild(privacyLink2);
 
 const termsLink = document.createElement('a');
 termsLink.href = 'https://www.mcdonalds.com/us/en-us/terms-and-conditions.html';
 termsLink.textContent = 'Terms & Conditions';
-policyLinksContainer.appendChild(termsLink);
+policyLinksContainer1.appendChild(termsLink);
 
 const accessibilityLink = document.createElement('a');
 accessibilityLink.href = 'https://www.mcdonalds.com/us/en-us/accessibility.html';
 accessibilityLink.textContent = 'Accessibility';
-policyLinksContainer.appendChild(accessibilityLink);
+policyLinksContainer1.appendChild(accessibilityLink);
 
 const informationLink = document.createElement('a');
 informationLink.href = 'https://www.mcdonalds.com/us/en-us/privacy/do-not-sell-my-personal-information.html';
 informationLink.textContent = 'Do Not Sell or Share My Personal Information';
-policyLinksContainer.appendChild(informationLink);
+policyLinksContainer2.appendChild(informationLink);
 
 const cookieLink = document.createElement('a');
 cookieLink.href = 'https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-food-experts.html';
 cookieLink.textContent = 'Cookies Settings';
-policyLinksContainer.appendChild(cookieLink);
-
+policyLinksContainer2.appendChild(cookieLink);
 
 const copyrightContainer = document.createElement('div');
 copyrightContainer.classList = 'copyrightContainer';
@@ -629,4 +636,6 @@ copyrightContainer.appendChild(mcdonaldsLogoCopyright);
 const copyrightText = document.createElement('p');
 copyrightText.textContent = '© 2017 - 2023 McDonalds. All Rights Reserved';
 copyrightContainer.appendChild(copyrightText); 
+
+//----------------Start Effects------------------------//
 
