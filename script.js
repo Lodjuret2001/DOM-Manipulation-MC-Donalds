@@ -332,9 +332,9 @@ const linksContainer4 = document.createElement('div');
 linksContainer4.classList = 'linksContainer';
 linkGrid.appendChild(linksContainer4);
 //----------------Start LinksContainer ------------------------//
-const aboutUsH2 = document.createElement('h2');
-aboutUsH2.textContent = 'About Us';
-linksContainer.appendChild(aboutUsH2);
+const aboutUsH3 = document.createElement('h3');
+aboutUsH3.textContent = 'About Us';
+linksContainer.appendChild(aboutUsH3);
 
 const aboutUsLink = document.createElement('a');
 aboutUsLink.href = '#';
@@ -382,9 +382,9 @@ aboutUsLink9.textContent = 'News & Notifications';
 linksContainer.appendChild(aboutUsLink9);
 
 //----------------Start LinksContainer2------------------------//
-const servicesH2 = document.createElement('h2');
-servicesH2.textContent = 'Services';
-linksContainer2.appendChild(servicesH2);
+const servicesH3 = document.createElement('h3');
+servicesH3.textContent = 'Services';
+linksContainer2.appendChild(servicesH3);
 
 const servicesLink = document.createElement('a');
 servicesLink.href = '#';
@@ -438,9 +438,9 @@ linksContainer2.appendChild(searchLink10);
 
 //----------------Start LinksContainer3------------------------//
 
-const communityH2 = document.createElement('h2');
-communityH2.textContent = 'Community';
-linksContainer3.appendChild(communityH2);
+const communityH3 = document.createElement('h3');
+communityH3.textContent = 'Community';
+linksContainer3.appendChild(communityH3);
 
 const communityLink = document.createElement('a');
 communityLink.href = '#';
@@ -484,9 +484,9 @@ linksContainer3.appendChild(communityLink8);
 
 //----------------Start linksContainer4 ------------------------//
 
-const contactUsH2 = document.createElement('h2');
-contactUsH2.textContent = 'Contact Us';
-linksContainer4.appendChild(contactUsH2);
+const contactUsH3 = document.createElement('h3');
+contactUsH3.textContent = 'Contact Us';
+linksContainer4.appendChild(contactUsH3);
 
 const contactUsLink = document.createElement('a');
 contactUsLink.href = '#';
@@ -637,5 +637,130 @@ const copyrightText = document.createElement('p');
 copyrightText.textContent = '© 2017 - 2023 McDonalds. All Rights Reserved';
 copyrightContainer.appendChild(copyrightText); 
 
-//----------------Start Effects------------------------//
+//----------------CSS functions------------------------//
 
+function styleElementA(selector, cssProps) {
+    // Select all HTML elements based on the provided selector
+    const elements = document.querySelectorAll(selector);
+    // Check if any elements were found
+    if (elements.length === 0) {
+        console.warn('No elements found for selector:', selector);
+        return;
+    }
+    // Apply each CSS property to each element
+    elements.forEach(element => {
+        for (const prop in cssProps) {
+            if (Object.prototype.hasOwnProperty.call(cssProps, prop)) {
+                element.style[prop] = cssProps[prop];
+            }
+        }
+    });
+}
+
+// Usage Example
+styleElementA('a', {'padding': '0', 'margin': '0', 'textDecoration': 'none', 'color': 'black'});
+
+function styleElementImg(selector, cssProps) {
+    // Select all HTML elements based on the provided selector
+    const elements = document.querySelectorAll(selector);
+    // Check if any elements were found
+    if (elements.length === 0) {
+        console.warn('No elements found for selector:', selector);
+        return;
+    }
+    // Apply each CSS property to each element
+    elements.forEach(element => {
+        for (const prop in cssProps) {
+            if (Object.prototype.hasOwnProperty.call(cssProps, prop)) {
+                element.style[prop] = cssProps[prop];
+            }
+        }
+    });
+}
+
+// Usage Example
+styleElementImg('img', {'width': '30px', 'height': '30px'});
+
+function styleElementP(selector, cssProps) {
+    // Select all HTML elements based on the provided selector
+    const elements = document.querySelectorAll(selector);
+    // Check if any elements were found
+    if (elements.length === 0) {
+        console.warn('No elements found for selector:', selector);
+        return;
+    }
+    // Apply each CSS property to each element
+    elements.forEach(element => {
+        for (const prop in cssProps) {
+            if (Object.prototype.hasOwnProperty.call(cssProps, prop)) {
+                element.style[prop] = cssProps[prop];
+            }
+        }
+    });
+}
+
+// Usage Example
+styleElementP('p', { 'margin': '0', 'padding': '0' });
+
+function styleElementH2(selector, cssProps) {
+    // Select all HTML elements based on the provided selector
+    const elements = document.querySelectorAll(selector);
+    // Check if any elements were found
+    if (elements.length === 0) {
+        console.warn('No elements found for selector:', selector);
+        return;
+    }
+    // Apply each CSS property to each element
+    elements.forEach(element => {
+        for (const prop in cssProps) {
+            if (Object.prototype.hasOwnProperty.call(cssProps, prop)) {
+                element.style[prop] = cssProps[prop];
+            }
+        }
+    });
+}
+
+// Usage Example
+styleElementH2('h2', { 'fontSize': '36px', 'fontWeight': '800' });
+
+function styleElementH3(selector, cssProps) {
+    // Select all HTML elements based on the provided selector
+    const elements = document.querySelectorAll(selector);
+    // Check if any elements were found
+    if (elements.length === 0) {
+        console.warn('No elements found for selector:', selector);
+        return;
+    }
+    // Apply each CSS property to each element
+    elements.forEach(element => {
+        for (const prop in cssProps) {
+            if (Object.prototype.hasOwnProperty.call(cssProps, prop)) {
+                element.style[prop] = cssProps[prop];
+            }
+        }
+    });
+}
+
+// Usage Example
+styleElementH3('h3', {'fontSize': '1pc', 'marginBottom': '20px', 'marginTop': '0px'});
+
+function styleElementBtn(selector, cssProps) {
+    // Select all HTML elements based on the provided selector
+    const elements = document.querySelectorAll(selector);
+    // Check if any elements were found
+    if (elements.length === 0) {
+        console.warn('No elements found for selector:', selector);
+        return;
+    }
+    // Apply each CSS property to each element
+    elements.forEach(element => {
+        for (const prop in cssProps) {
+            if (Object.prototype.hasOwnProperty.call(cssProps, prop)) {
+                element.style[prop] = cssProps[prop];
+            }
+        }
+    });
+}
+
+// Usage Example
+styleElementBtn('button', {'backgroundColor': '#ffbc0d', 'fontSize': '15px', 'border': 'none', 'borderRadius': '4px', 'padding': '15px 30px', 'marginTop': '25px'});
