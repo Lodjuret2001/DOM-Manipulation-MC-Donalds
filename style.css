@@ -1,0 +1,334 @@
+/*------GENERAL CSS------*/
+
+body {
+    margin: 0;
+    font-family: Speedee, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif;
+    color: black;
+    font-size: 14px;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+/*-----NAVBAR CSS-------*/
+
+.navbarBackground {
+    height: 135px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+
+}
+
+.navbarContainer {
+    display: flex;
+    align-items: center;
+    width: 1170px;
+}
+
+.navbarContainerLeft {
+    width: 110px;
+    height: 110px;
+}
+
+.navbarContainerLeft img {
+    width: 100%;
+    height: 100%;
+}
+
+.navbarContainerRight {
+    flex: 1;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*-----Navbar top links-------*/
+
+.navbarTopContainer {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topContainerBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.topContainerBoxLeft {
+    width: 315px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.languageContainer {
+    display: flex;
+    align-items: center;
+}
+
+.languageContainer img {
+    width: 12px;
+    height: 12px;
+    padding-top: 3px;
+    margin-left: 5px;
+}
+
+.topContainerBoxRight {
+    width: 375px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.searchImgContainer {
+    display: flex;
+    align-items: center;
+}
+
+.searchImgContainer img {
+    width: 17px;
+    height: 17px;
+    margin-right: 4px;
+}
+
+.changeLocationContainer {
+    display: flex;
+    align-items: center;
+}
+
+.changeLocationContainer img {
+    width: 17px;
+    height: 17px;
+    margin-right: 4px;
+}
+
+.changeLocationContainer a {
+    color: rgb(56, 56, 155);
+    text-decoration: underline;
+}
+
+.btnOrderNow {
+    padding: 12px 24px;
+    background-color: #ffbc0d;
+    border: none;
+    border-radius: 4px;
+}
+
+/*------Navbar bottom links------*/
+
+.navbarBottomContainer {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.bottomContainerBox {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+}
+
+.ourMenuContainer {
+    display: flex;
+    align-items: center;
+}
+
+.ourMenuContainer img {
+    width: 14px;
+    height: 14px;
+    margin-left: 4px;
+}
+
+/*------PAGEGRID CSS------*/
+.pageGrid {
+    display: grid;
+    grid-template-columns: 1fr minmax(400px, 1170px) 1fr;
+    margin-bottom: 50px;
+}
+
+/*------Start Main content------*/
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.mainContainer h1 {
+    margin-top: 90px;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.cuttingTomatoImg {
+    width: 100%;
+    height: 560px;
+}
+
+.mainContainer p {
+    font-size: 20px;
+    padding: 110px 0px;
+}
+
+/*-----Start Meet us Grid-------*/
+
+.meetUsGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+}
+
+.meetUsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    font-size: 16px;
+}
+
+.meetUsImg {
+    width: 100%;
+    height: 250px;
+}
+
+.meetUsH2 {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.meetUsBtn {
+    background-color: #ffbc0d;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 30px;
+    margin-top: 25px;
+}
+
+/*------Start Link GRID------*/
+
+.linkGrid {
+    margin-top: 160px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 25px;
+}
+
+.linksContainer {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.linksContainer a {
+    font-size: 15px;
+    margin: 4px 0px;
+}
+
+.linksContainer h2 {
+    font-size: 1pc;
+    margin-bottom: 20px;
+    margin-top: 0px;
+
+}
+
+/*------Start SocialMedia and App------*/
+
+.socialAppContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.socialMediaContainer {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.appContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.socialMediaContainer img {
+    width: 30px;
+    height: 30px;
+}
+
+.appContainer img {
+    width: auto;
+    height: 40px;
+}
+
+.socialAppContainer hr {
+    margin-bottom: 30px;
+}
+
+/*------Start policyCopyrightLinks------*/
+
+.policyCopyrightContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 50px;
+    
+}
+
+.policyLinksContainer {
+    margin-left: 20px;
+    width: 650px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.copyrightContainer {
+    margin-right: 20px;
+    display: flex;
+}
+
+.policyLinksContainer a {
+    margin-right: 30px;
+}
+
+.copyrightContainer img {
+    margin-right: 30px;
+}
