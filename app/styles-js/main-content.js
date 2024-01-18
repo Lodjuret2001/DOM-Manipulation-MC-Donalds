@@ -13,7 +13,7 @@ export function createMainContent() {
 
     const mainGridLeft = document.createElement('div');
     mainGrid.appendChild(mainGridLeft);
-    
+
     const mainGridMid = document.createElement('div');
     mainGridMid.id = 'mainGridMid';
     mainGrid.appendChild(mainGridMid);
@@ -37,6 +37,7 @@ export function createMainContent() {
         fontSize: '50px',
         fontWeight: '800'
     };
+    h1.textContent = 'Meet Our Food Experts';
     applyStyles(h1, h1Styles);
     mainContainer.appendChild(h1);
 
