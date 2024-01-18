@@ -1,4 +1,4 @@
-import { applyStyles } from "../functions.js";
+import { applyStyles, createLinks } from "../functions.js";
 
 export function createFooter() {
 
@@ -37,40 +37,24 @@ export function createFooter() {
         marginRight: '30px'
     };
 
-    const privacyLink = document.createElement('a');
-    privacyLink.href = 'https://www.mcdonalds.com/us/en-us/privacy-overview.html';
-    privacyLink.textContent = 'Privacy (Updated)';
-    applyStyles(privacyLink, policyLinksStyles);
-    policyContainer1.appendChild(privacyLink);
+    const policyLinks1 = [
+        { text: 'Privacy (Updated)', href: '#' },
+        { text: 'California Privacy Notice', href: '#' },
+        { text: 'Terms & Conditions', href: '#' },
+        { text: 'Accessibility', href: '#' },
+    ];
+    createLinks(policyContainer1, policyLinks1);
 
-    const privacyLink2 = document.createElement('a');
-    privacyLink2.href = 'https://www.mcdonalds.com/us/en-us/california-privacy-notice.html';
-    privacyLink2.textContent = 'California Privacy Notice';
-    applyStyles(privacyLink2, policyLinksStyles);
-    policyContainer1.appendChild(privacyLink2);
+    const policyLinks2 = [
+        { text: 'Do Not Sell or Share My Personal Information', href: '#' },
+        { text: 'Cookies Settings', href: '#' },
+    ];
+    createLinks(policyContainer2, policyLinks2);
 
-    const termsLink = document.createElement('a');
-    termsLink.href = 'https://www.mcdonalds.com/us/en-us/terms-and-conditions.html';
-    termsLink.textContent = 'Terms & Conditions';
-    applyStyles(termsLink, policyLinksStyles);
-    policyContainer1.appendChild(termsLink);
-
-    const accessibilityLink = document.createElement('a');
-    accessibilityLink.href = 'https://www.mcdonalds.com/us/en-us/accessibility.html';
-    accessibilityLink.textContent = 'Accessibility';
-    applyStyles(accessibilityLink, policyLinksStyles);
-    policyContainer1.appendChild(accessibilityLink);
-
-    const informationLink = document.createElement('a');
-    informationLink.href = 'https://www.mcdonalds.com/us/en-us/privacy/do-not-sell-my-personal-information.html';
-    informationLink.textContent = 'Do Not Sell or Share My Personal Information';
-    applyStyles(informationLink, policyLinksStyles);
-    policyContainer2.appendChild(informationLink);
-
-    const cookieLink = document.createElement('a');
-    cookieLink.href = 'https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-food-experts.html';
-    cookieLink.textContent = 'Cookies Settings';
-    policyContainer2.appendChild(cookieLink);
+    const policyLinks = policyMainContainer.querySelectorAll('a');
+    policyLinks.forEach(link => {
+        applyStyles(link, policyLinksStyles);
+    });
 
     const copyrightContainer = document.createElement('div');
     const copyrightContainerStyles = {

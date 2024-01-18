@@ -1,7 +1,7 @@
-import { applyStyles } from "../functions.js";
+import { applyStyles, createLinks } from "../functions.js";
 
 export function createNavbar() {
-    
+
     const background = document.createElement('div');
     const backgroundStyles = {
         height: '135px',
@@ -193,7 +193,7 @@ export function createNavbar() {
 
     const bottomContainerBox = document.createElement('div');
     const bottomContainerBoxStyles = {
-        width: '90%',
+        width: '80%',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
@@ -222,36 +222,16 @@ export function createNavbar() {
         height: '14px',
         marginLeft: '4px'
     };
-    applyStyles(menuDropdownImg, menuDropdownImgStyles);
+    applyStyles(menuDropdownImg, menuDropdownImgStyles);    
     menuContainer.appendChild(menuDropdownImg);
 
-    const downloadAppLink = document.createElement('a');
-    downloadAppLink.href = 'https://www.mcdonalds.com/us/en-us/download-app.html';
-    downloadAppLink.textContent = 'Download App';
-    bottomContainerBox.appendChild(downloadAppLink);
+    const bottomContainerLinks = [
+        { text: 'Download App', href: 'https://www.mcdonalds.com/us/en-us/download-app.html' },
+        { text: 'Exclusive Deals', href: 'https://www.mcdonalds.com/us/en-us/deals.html' },
+        { text: 'About our food', href: 'https://www.mcdonalds.com/us/en-us/about-our-food.html' },
+        { text: 'Locate', href: 'https://www.mcdonalds.com/us/en-us/restaurant-locator.html' },
+        { text: 'Gift Cards', href: 'https://www.mcdonalds.com/us/en-us/arch-card.html' },
+    ];
+    createLinks(bottomContainerBox, bottomContainerLinks);
 
-    const mcDonaldsRewardLink = document.createElement('a');
-    mcDonaldsRewardLink.href = 'https://www.mcdonalds.com/us/en-us/mymcdonalds.html';
-    mcDonaldsRewardLink.textContent = 'MyMcDonalds Rewards';
-    bottomContainerBox.appendChild(mcDonaldsRewardLink);
-
-    const dealsLink = document.createElement('a');
-    dealsLink.href = 'https://www.mcdonalds.com/us/en-us/deals.html';
-    dealsLink.textContent = 'Exclusive Deals';
-    bottomContainerBox.appendChild(dealsLink);
-
-    const aboutOurFoodLink = document.createElement('a');
-    aboutOurFoodLink.href = 'https://www.mcdonalds.com/us/en-us/about-our-food.html';
-    aboutOurFoodLink.textContent = 'About Our Food';
-    bottomContainerBox.appendChild(aboutOurFoodLink);
-
-    const locateLink = document.createElement('a');
-    locateLink.href = 'https://www.mcdonalds.com/us/en-us/restaurant-locator.html';
-    locateLink.textContent = 'Locate';
-    bottomContainerBox.appendChild(locateLink);
-
-    const giftCardsLink = document.createElement('a');
-    giftCardsLink.href = 'https://www.mcdonalds.com/us/en-us/arch-card.html';
-    giftCardsLink.textContent = 'Gift Cards';
-    bottomContainerBox.appendChild(giftCardsLink);
 }

@@ -22,11 +22,19 @@ export function applyGlobalStyles(element, styles) {
 export function buildFragment(number, element) {
 
     const fragment = document.createDocumentFragment();
-    const x = number;
 
-    for (let i = 0; i < x; i++) {
+    for (let i = 0; i < number; i++) {
         const child = document.createElement(element);
         fragment.appendChild(child);
     }
     return fragment;
+}
+
+export function createLinks(container, links) {
+    links.forEach(linkData => {
+        const link = document.createElement('a');
+        link.href = linkData.href;
+        link.textContent = linkData.text;
+        container.appendChild(link);
+    });
 }
